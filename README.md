@@ -21,6 +21,7 @@ When an item is checkmarked, it means the basic foundation is in place but not n
   - [ ] Inventory
   - [ ] Appearance
   - [ ] Quests
+- Items
 - NPC
   - [ ] Trading (Shops)
   - [ ] Dialog Interaction

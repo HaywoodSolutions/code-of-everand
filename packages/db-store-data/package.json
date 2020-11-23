@@ -1,13 +1,14 @@
 {
-  "name": "@code-of-everand/data-rooms",
+  "name": "@code-of-everand/db-store-data",
   "version": "1.0.0",
-  "description": "@code-of-everand/data-rooms",
+  "description": "@code-of-everand/db-store-data",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "store": "node dist/index.js"
   },
   "main": "dist/index.js",
   "repository": {
-    "directory": "packages/data-rooms",
+    "directory": "packages/db-store-data",
     "type": "git",
     "url": "https://github.com/haywoodsolutions/code-of-everand.git"
   },
@@ -18,6 +19,8 @@
     "typescript": "4.0.5"
   },
   "dependencies": {
-    "@code-of-everand/types-map": "1.0.0"
+    "@code-of-everand/types-map": "1.0.0",
+    "@code-of-everand/data-rooms": "1.0.0",
+    "@code-of-everand/firebase": "1.0.0"
   }
 }
