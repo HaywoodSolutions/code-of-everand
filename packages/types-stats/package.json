@@ -1,0 +1,22 @@
+{
+  "name": "@code-of-everand/types-stats",
+  "version": "1.0.0",
+  "description": "@code-of-everand/types-stats",
+  "scripts": {
+    "test": "tsc"
+  },
+  "files": [
+    "index.d.ts"
+  ],
+  "repository": {
+    "directory": "packages/types-stats",
+    "type": "git",
+    "url": "https://github.com/haywoodsolutions/code-of-everand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
+  },
+  "devDependencies": {
+    "typescript": "4.0.5"
+  }
+}

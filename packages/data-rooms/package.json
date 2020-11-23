@@ -1,0 +1,23 @@
+{
+  "name": "@code-of-everand/data-rooms",
+  "version": "1.0.0",
+  "description": "@code-of-everand/data-rooms",
+  "scripts": {
+    "test": "tsc"
+  },
+  "main": "dist/index.js",
+  "repository": {
+    "directory": "packages/data-rooms",
+    "type": "git",
+    "url": "https://github.com/haywoodsolutions/code-of-everand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
+  },
+  "devDependencies": {
+    "typescript": "4.0.5"
+  },
+  "dependencies": {
+    "@code-of-everand/types-map": "1.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@code-of-everand/types-map",
+  "version": "1.0.0",
+  "description": "@code-of-everand/types-map",
+  "scripts": {
+    "test": "tsc"
+  },
+  "files": [
+    "index.d.ts"
+  ],
+  "repository": {
+    "directory": "packages/types-map",
+    "type": "git",
+    "url": "https://github.com/haywoodsolutions/code-of-everand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
+  },
+  "dependencies": {
+    "@code-of-everand/types-misc": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "4.0.5"
+  }
+}

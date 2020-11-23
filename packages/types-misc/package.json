@@ -1,0 +1,22 @@
+{
+  "name": "@code-of-everand/types-misc",
+  "version": "1.0.0",
+  "description": "@code-of-everand/misc Types",
+  "scripts": {
+    "test": "tsc"
+  },
+  "files": [
+    "index.d.ts"
+  ],
+  "repository": {
+    "directory": "packages/types-misc",
+    "type": "git",
+    "url": "https://github.com/haywoodsolutions/code-of-everand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
+  },
+  "devDependencies": {
+    "typescript": "4.0.5"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@code-of-everand/images-room-sprites",
+  "version": "1.0.0",
+  "description": "@code-of-everand/images-room-sprites",
+  "scripts": {
+    "build": "tsc",
+    "handleMissing": "node ./dist/createMissingImages.js",
+    "deployImages": "node ./dist/deployImages.js"
+  },
+  "files": [
+    "index.d.ts"
+  ],
+  "repository": {
+    "directory": "packages/images-room-sprites",
+    "type": "git",
+    "url": "https://github.com/haywoodsolutions/code-of-everand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
+  },
+  "devDependencies": {
+    "typescript": "4.0.5"
+  },
+  "dependencies": {
+    "@code-of-everand/data-room-sprites": "1.0.0",
+    "@types/fs-extra": "^9.0.4",
+    "@types/jimp": "^0.2.28",
+    "firebase-admin": "^9.4.1",
+    "fs-extra": "^9.0.1",
+    "jimp": "^0.16.1",
+    "tslib": "^2.0.3"
+  }
+}

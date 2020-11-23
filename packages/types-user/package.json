@@ -1,0 +1,26 @@
+{
+  "name": "@code-of-everand/types-user",
+  "version": "1.0.0",
+  "description": "@code-of-everand/types-user",
+  "scripts": {
+    "test": "tsc"
+  },
+  "files": [
+    "index.d.ts"
+  ],
+  "repository": {
+    "directory": "packages/types-user",
+    "type": "git",
+    "url": "https://github.com/haywoodsolutions/code-of-everand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
+  },
+  "dependencies": {
+    "@code-of-everand/types-misc": "1.0.0",
+    "@code-of-everand/types-stats": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "4.0.5"
+  }
+}
