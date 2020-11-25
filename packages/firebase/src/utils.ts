@@ -2,18 +2,29 @@ import admin from ".";
 
 export class FirestoreDocument<T extends Record<string|number, any>> {
   readonly ref: admin.firestore.DocumentReference<T>;
-  readonly set: (data: T) => Promise<admin.firestore.WriteResult>;
-  readonly update: (data: Partial<T>) => Promise<admin.firestore.WriteResult>;
+  // readonly set: (data: T) => Promise<admin.firestore.WriteResult>;
+  // readonly update: (data: Partial<T>) => Promise<admin.firestore.WriteResult>;
   readonly collectionName: string;
   readonly docName: string;
 
-  constructor(db: admin.firestore.Firestore, collectionName: string, docName: string) {
+  constructor(db: admin.firestore.Firestore, collectionName: string, docName: string, options?: {
+    store: (something: T) => FirebaseFirestore.DocumentData,
+    extract: (something: FirebaseFirestore.DocumentData) => T
+  }) {
     this.collectionName = collectionName;
     this.docName = docName;
     this.ref = db.collection(collectionName).doc(docName) as admin.firestore.DocumentReference<T>;
     
-    this.set = this.ref.set;
-    this.update = this.ref.update;
+    // this.set = this.ref.set;
+    // this.update = this.ref.update;
+  }
+
+  set(data: T): Promise<admin.firestore.WriteResult> {
+    return this.ref.set(data);
+  }
+
+  update(data: Partial<T>, preconditions?: FirebaseFirestore.Precondition): Promise<admin.firestore.WriteResult> {
+    return this.ref.update(data, preconditions);
   }
 
   batchSet(batch: admin.firestore.WriteBatch, data: T): admin.firestore.WriteBatch {
@@ -40,7 +51,10 @@ export class FirestoreCollection<T extends Record<string|number, any>> {
   readonly ref: admin.firestore.CollectionReference<T>;
   readonly collectionName: string;
 
-  constructor(private db: admin.firestore.Firestore, collectionName: string) {
+  constructor(private db: admin.firestore.Firestore, collectionName: string, private options?: {
+    store: (something: T) => FirebaseFirestore.DocumentData,
+    extract: (something: FirebaseFirestore.DocumentData) => T
+  }) {
     this.collectionName = collectionName;
     this.ref = db.collection(collectionName) as admin.firestore.CollectionReference<T>;
   }
@@ -50,7 +64,7 @@ export class FirestoreCollection<T extends Record<string|number, any>> {
   }
 
   document(docName: string): FirestoreDocument<T> {
-    return new FirestoreDocument<T>(this.db, this.collectionName, docName);
+    return new FirestoreDocument<T>(this.db, this.collectionName, docName, this.options);
   }
 
   getIds(): Promise<string[]> {

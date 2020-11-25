@@ -44,4 +44,4 @@ When an item is checkmarked, it means the basic foundation is in place but not n
     - [ ] Quests
     - [ ] Teleporters
 
-Once all of these items are checked, Code of Everand will be stable without breaking changes. But for the time being, please jump in and help add some of these features -- if you'd like!
+Once all of these items are checked, Code of Everand will be stable without breaking changes.

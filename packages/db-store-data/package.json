@@ -21,6 +21,7 @@
   "dependencies": {
     "@code-of-everand/types-map": "1.0.0",
     "@code-of-everand/data-rooms": "1.0.0",
+    "@code-of-everand/data-room-sprites": "1.0.0",
     "@code-of-everand/firebase": "1.0.0"
   }
 }

@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "@code-of-everand/types-map",
   "scripts": {
-    "test": "tsc"
+    "build": "tsc"
   },
-  "files": [
-    "index.d.ts"
-  ],
+  "main": "dist/index.js",
   "repository": {
     "directory": "packages/types-map",
     "type": "git",

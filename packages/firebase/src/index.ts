@@ -13,6 +13,6 @@ admin.initializeApp({
 export default admin;
 export const bucket = admin.storage().bucket();
 
-const db = admin.firestore();
+export const db = admin.firestore();
 
 export const DB = genDBRefs(db);
