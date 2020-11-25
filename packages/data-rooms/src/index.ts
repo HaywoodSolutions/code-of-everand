@@ -32,7 +32,8 @@ const Rooms: Record<string, Room> = BaseRooms.reduce((obj: Record<string, Room>,
     cordOnMap: room.cordOnMap,
     region: room.region,
     walkable: DefaultFloorPlan,
-    connections: GetConnectionsForRoom(room.cordOnMap, BaseRoomConnections)
+    connections: GetConnectionsForRoom(room.cordOnMap, BaseRoomConnections),
+    roomSprites: room.roomSprites
   };
 
   return obj;

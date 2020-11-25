@@ -1,77 +1,127 @@
 import { RoomSprite } from '@code-of-everand/types-map';
 
-const RoomSpritesBase: Omit<RoomSprite, "id">[] = [
+const RoomSpritesBase: (Omit<RoomSprite, "id"|"walkable"> & {
+  walkable: number[][]
+})[] = [
   {
     name: "Medium Tree 1",
     depth: [2, 2],
     height: 4,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Medium Tree No Leaves",
     depth: [2, 2],
     height: 4,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Small Tree 1",
     depth: [2, 2],
     height: 4,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Small Tree No Leaves",
     depth: [2, 2],
     height: 4,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Barrel",
     depth: [1, 1],
     height: 2,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Sign 1",
     depth: [1, 1],
     height: 2,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Sign 2",
     depth: [1, 1],
     height: 3,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Tall Stone 1",
     depth: [1, 1],
     height: 2,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Tall Stone 2",
     depth: [1, 1],
     height: 2,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Tall Stone 3",
     depth: [1, 1],
     height: 2,
-    walkable: []
+    walkable: [
+      [0]
+    ]
   },
   {
     name: "Ballon Platform Empty 1",
     depth: [8, 8],
     height: 8,
-    walkable: []
+    walkable: [
+          [1],
+         [0,1],
+        [0,0,1],
+       [0,0,0,1],
+      [0,0,0,0,1],
+       [0,0,0,0],
+      [0,0,0,0,1],
+       [0,0,0,0],
+      [0,0,0,0,1],
+       [0,0,0,0],
+        [0,0,0],
+         [0,0],
+          [0]
+    ]
   },
   {
     name: "Ballon Platform Empty 2",
     depth: [8, 8],
     height: 8,
-    walkable: []
+    walkable: [
+          [1],
+         [1,0],
+        [1,0,0],
+       [1,0,0,0],
+      [1,0,0,0,0],
+       [0,0,0,0],
+      [1,0,0,0,0],
+       [0,0,0,0],
+      [1,0,0,0,0],
+       [0,0,0,0],
+        [0,0,0],
+         [0,0],
+          [0]
+    ]
   }
 ];
 
@@ -82,7 +132,10 @@ const RoomSprites: Record<string, RoomSprite> = RoomSpritesBase.reduce((obj: Rec
     name: ms.name,
     depth: ms.depth,
     height: ms.height,
-    walkable: []
+    walkable: ms.walkable.reduce((obj: Record<number, number[]>, x, i) => {
+      obj[i] = x;
+      return obj;
+    }, {})
   };
   return obj;
 }, {})

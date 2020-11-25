@@ -5,7 +5,7 @@ export type RoomSprite = {
   name: string,
   depth: [number, number],
   height: number,
-  walkable: (0|1)[][]
+  walkable: Record<number, number[]>
 };
 
 export type RoomConnectionPoints = Record<string, {
@@ -17,7 +17,11 @@ export type Room = {
   region?: Region,
   walkable: FloorPlan<0|1>,
   channels: Channel[],
-  connections: RoomConnectionPoints
+  connections: RoomConnectionPoints,
+  roomSprites: {
+    cord: Cord,
+    sprite: string
+  }[]
 };
 
 export enum RoomConnectionType {
