@@ -20,6 +20,6 @@
     "typescript": "4.0.5"
   },
   "dependencies": {
-    "@code-of-everand/types-misc": "1.0.0"
+    "@code-of-everand/types-misc": "^1.0.0"
   }
 }

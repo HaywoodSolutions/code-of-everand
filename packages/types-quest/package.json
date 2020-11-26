@@ -17,7 +17,7 @@
     "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
   },
   "dependencies": {
-    "@code-of-everand/types-misc": "1.0.0"
+    "@code-of-everand/types-misc": "^1.0.0"
   },
   "devDependencies": {
     "typescript": "4.0.5"
