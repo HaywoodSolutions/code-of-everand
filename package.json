@@ -1,13 +1,22 @@
 {
-  "name": "code-of-everand",
+  "name": "root",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "dependencies": {
+    "metro-config": "^0.56.0"
+  },
   "scripts": {
+    "web": "lerna --scope=web-app run start --stream --",
+    "expo": "lerna --scope=expo-app run start --stream --",
+    "postinstall": "cd ./packages/expo-app && expo-yarn-workspaces postinstall",
     "build": "lerna run build"
   },
-  "devDependencies": {
-    "lerna": "^2.11.0"
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": ["**/react-native", "**/react-native/**", "**/expo", "**/expo/**"]
   }
 }

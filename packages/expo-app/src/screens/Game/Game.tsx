@@ -4,6 +4,7 @@ import * as ScreenOrientation from 'expo-screen-orientation';
 import { Dimensions } from 'react-native';
 import BottomBar from './BottomBar/BottomBar';
 import { scaleH } from './Scales';
+import Room from './Room';
 
 class Game extends React.Component {
   componentDidMount() {
@@ -13,9 +14,7 @@ class Game extends React.Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <View style={{flex: 1, backgroundColor: 'red'}}>
-          <Image source={require('../../../assets/ExamplarScreen.png')} style={{width: '100%', height: '100%'}} resizeMode='stretch' />
-        </View>
+        <Room />
         <View style={{flex: 0, height: scaleH * 47}}>
           <BottomBar />
         </View>
