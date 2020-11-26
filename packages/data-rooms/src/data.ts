@@ -103,7 +103,7 @@ export const BaseRooms: Omit<Room, "walkable"|"connections">[] = [
 export const BaseRoomConnections: RoomConnection[] = [
   {
     type: RoomConnectionType.NS,
-    roomIds: [[0,1], [1,1]],
-    position: 4
+    roomIds: [[0,0], [0,0]],
+    position: 0
   }
 ]
