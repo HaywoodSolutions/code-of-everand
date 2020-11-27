@@ -1,6 +1,6 @@
 {
   "name": "@code-of-everand/types-quest",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "@code-of-everand/types-quest",
   "scripts": {
     "test": "tsc"
@@ -17,7 +17,7 @@
     "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
   },
   "dependencies": {
-    "@code-of-everand/types-misc": "^1.0.3"
+    "@code-of-everand/types-misc": "^1.0.5"
   },
   "devDependencies": {
     "typescript": "4.0.5"
