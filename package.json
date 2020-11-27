@@ -1,5 +1,6 @@
 {
   "name": "code-of-everand",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -9,6 +10,5 @@
   },
   "devDependencies": {
     "lerna": "^2.11.0"
-  },
-  "version": "0.0.0"
+  }
 }
