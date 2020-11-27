@@ -1,6 +1,6 @@
 {
   "name": "@code-of-everand/data-room-sprites",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "@code-of-everand/data-room-sprites",
   "scripts": {
     "build": "tsc",
@@ -19,6 +19,6 @@
     "typescript": "4.0.5"
   },
   "dependencies": {
-    "@code-of-everand/types-map": "^1.0.1"
+    "@code-of-everand/types-map": "^1.0.2"
   }
 }

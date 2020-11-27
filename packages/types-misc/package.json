@@ -1,14 +1,11 @@
 {
   "name": "@code-of-everand/types-misc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "@code-of-everand/misc Types",
   "scripts": {
-    "test": "tsc",
-    "publish": "lerna publish"
+    "build": "tsc"
   },
-  "files": [
-    "index.d.ts"
-  ],
+  "main": "dist/index.js",
   "repository": {
     "directory": "packages/types-misc",
     "type": "git",
@@ -19,5 +16,9 @@
   },
   "devDependencies": {
     "typescript": "4.0.5"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   }
 }
