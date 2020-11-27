@@ -1,0 +1,18 @@
+{
+  "functions": {
+    "source": "packages/functions",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".firebase/**",
+      "**/node_modules/**"
+    ]
+  },
+  "storage": {
+    "rules": "packages/storage/storage.rules"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
