@@ -1,6 +1,6 @@
 {
   "name": "@code-of-everand/types-stats",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "@code-of-everand/types-stats",
   "scripts": {
     "test": "tsc"
