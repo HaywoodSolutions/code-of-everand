@@ -1,6 +1,6 @@
 {
   "name": "@code-of-everand/functions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "lint": "eslint \"src/**/*\"",
     "build": "tsc",
@@ -16,8 +16,8 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@code-of-everand/firebase": "^1.0.2",
-    "@code-of-everand/types-user": "^1.0.2",
+    "@code-of-everand/firebase": "^1.0.3",
+    "@code-of-everand/types-user": "^1.0.3",
     "firebase-admin": "^9.2.0",
     "firebase-functions": "^3.11.0"
   },
