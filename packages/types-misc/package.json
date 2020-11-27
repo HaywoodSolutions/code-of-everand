@@ -1,6 +1,6 @@
 {
   "name": "@code-of-everand/types-misc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "@code-of-everand/misc Types",
   "scripts": {
     "build": "tsc"
