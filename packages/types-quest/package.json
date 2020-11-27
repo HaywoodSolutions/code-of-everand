@@ -1,6 +1,6 @@
 {
   "name": "@code-of-everand/types-quest",
-  "version": "1.0.4",
+  "version": "1.0.2",
   "description": "@code-of-everand/types-quest",
   "scripts": {
     "test": "tsc"
@@ -17,13 +17,12 @@
     "url": "https://github.com/haywoodsolutions/code-of-everand/issues"
   },
   "dependencies": {
-    "@code-of-everand/types-misc": "^1.0.4"
+    "@code-of-everand/types-misc": "^1.0.2"
   },
   "devDependencies": {
     "typescript": "4.0.5"
   },
   "publishConfig": {
-    "access": "restricted",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "restricted"
   }
 }

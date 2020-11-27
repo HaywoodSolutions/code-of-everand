@@ -1,6 +1,6 @@
 {
   "name": "@code-of-everand/types-stats",
-  "version": "1.0.4",
+  "version": "1.0.2",
   "description": "@code-of-everand/types-stats",
   "scripts": {
     "test": "tsc"
@@ -20,7 +20,6 @@
     "typescript": "4.0.5"
   },
   "publishConfig": {
-    "access": "restricted",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "restricted"
   }
 }

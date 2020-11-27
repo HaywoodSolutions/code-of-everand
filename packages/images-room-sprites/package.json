@@ -1,6 +1,6 @@
 {
   "name": "@code-of-everand/images-room-sprites",
-  "version": "1.0.4",
+  "version": "1.0.2",
   "description": "@code-of-everand/images-room-sprites",
   "scripts": {
     "build": "tsc",
@@ -22,8 +22,8 @@
     "typescript": "4.0.5"
   },
   "dependencies": {
-    "@code-of-everand/data-room-sprites": "^1.0.4",
-    "@code-of-everand/firebase": "^1.0.4",
+    "@code-of-everand/data-room-sprites": "^1.0.2",
+    "@code-of-everand/firebase": "^1.0.2",
     "@types/fs-extra": "^9.0.1",
     "@types/jimp": "^0.2.28",
     "fs-extra": "^9.0.1",
