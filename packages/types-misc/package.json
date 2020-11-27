@@ -1,9 +1,10 @@
 {
   "name": "@code-of-everand/types-misc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "@code-of-everand/misc Types",
   "scripts": {
-    "test": "tsc"
+    "test": "tsc",
+    "publish": "lerna publish"
   },
   "files": [
     "index.d.ts"

@@ -1,9 +1,10 @@
 {
   "name": "@code-of-everand/data-room-sprites",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "@code-of-everand/data-room-sprites",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "lerna publish"
   },
   "main": "dist/index.js",
   "repository": {
@@ -18,6 +19,6 @@
     "typescript": "4.0.5"
   },
   "dependencies": {
-    "@code-of-everand/types-map": "^1.0.0"
+    "@code-of-everand/types-map": "^1.0.1"
   }
 }

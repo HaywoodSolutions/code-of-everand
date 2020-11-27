@@ -1,9 +1,10 @@
 {
   "name": "@code-of-everand/types-battle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "@code-of-everand/types-battle",
   "scripts": {
-    "test": "tsc"
+    "test": "tsc",
+    "publish": "lerna publish"
   },
   "files": [
     "index.d.ts"
@@ -20,6 +21,6 @@
     "typescript": "4.0.5"
   },
   "dependencies": {
-    "@code-of-everand/types-misc": "^1.0.0"
+    "@code-of-everand/types-misc": "^1.0.1"
   }
 }
