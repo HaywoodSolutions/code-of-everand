@@ -3,9 +3,13 @@
   "version": "1.0.5",
   "description": "@code-of-everand/misc Types",
   "scripts": {
-    "build": "tsc"
+    "compile": "tsc",
+    "compile:types": "tsc --declaration true",
+    "build": "yarn compile",
+    "publish:registry": "yarn publish"
   },
-  "main": "dist/index.js",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "repository": {
     "directory": "packages/types-misc",
     "type": "git",
@@ -18,6 +22,7 @@
     "typescript": "4.0.5"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   }
 }

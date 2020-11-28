@@ -1,6 +1,5 @@
 {
   "name": "@code-of-everand/db-store-data",
-  "version": "1.0.5",
   "description": "@code-of-everand/db-store-data",
   "scripts": {
     "build": "tsc",

@@ -3,11 +3,13 @@
   "version": "1.0.5",
   "description": "@code-of-everand/types-quest",
   "scripts": {
-    "test": "tsc"
+    "compile": "tsc",
+    "compile:types": "tsc --declaration true",
+    "build": "yarn compile",
+    "publish:registry": "yarn publish"
   },
-  "files": [
-    "index.d.ts"
-  ],
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "repository": {
     "directory": "packages/types-quest",
     "type": "git",
@@ -23,6 +25,7 @@
     "typescript": "4.0.5"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   }
 }

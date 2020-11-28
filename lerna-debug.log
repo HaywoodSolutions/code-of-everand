@@ -1,9 +1,9 @@
-0 silly input [ 'build' ]
+0 silly input [ 'publish:registry' ]
 1 silly flags {
 1 silly flags   _: [ 'run' ],
 1 silly flags   'reject-cycles': false,
 1 silly flags   rejectCycles: false,
-1 silly flags   script: 'build',
+1 silly flags   script: 'publish:registry',
 1 silly flags   args: []
 1 silly flags }
 2 verbose rootPath C:\Users\tomha\Desktop\git\code-of-everand
@@ -12,41 +12,29 @@
 5 silly initialize attempt
 6 silly initialize success
 7 silly execute attempt
-8 silly runScriptInDir build [] types-map
+8 silly runScriptInDir publish:registry [] types-misc
 9 silly getExecOpts {
-9 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\types-map'
+9 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\types-misc'
 9 silly getExecOpts }
-10 silly runScriptInDir build [] data-room-sprites
+10 silly runScriptInDir publish:registry [] types-stats
 11 silly getExecOpts {
-11 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\data-room-sprites'
+11 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\types-stats'
 11 silly getExecOpts }
-12 silly runScriptInDir build [] data-rooms
-13 silly getExecOpts {
-13 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\data-rooms'
-13 silly getExecOpts }
-14 silly runScriptInDir build [] firebase
-15 silly getExecOpts {
-15 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\firebase'
-15 silly getExecOpts }
-16 silly runScriptInDir build [] db-store-data
-17 silly getExecOpts {
-17 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\db-store-data'
-17 silly getExecOpts }
-18 silly runScriptInDir build [] functions-room
-19 silly getExecOpts {
-19 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\functions-room'
-19 silly getExecOpts }
-20 silly runScriptInDir build [] images-room-sprites
-21 silly getExecOpts {
-21 silly getExecOpts   cwd: 'C:\\Users\\tomha\\Desktop\\git\\code-of-everand\\packages\\images-room-sprites'
-21 silly getExecOpts }
-22 error build Errored while running script in '@code-of-everand/images-room-sprites'
-23 error execute callback with error
-24 error Error: Command failed: yarn run build
-24 error warning package.json: No license field
-24 error error Command failed with exit code 2.
-24 error $ tsc
-24 error src/deployImages.ts(6,45): error TS2307: Cannot find module './serviceAccountKey.json' or its corresponding type declarations.
-24 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-24 error
-24 error     at C:\Users\tomha\Desktop\git\code-of-everand\node_modules\execa\index.js:236:11
+12 error publish:registry Errored while running script in '@code-of-everand/types-misc'
+13 error execute callback with error
+14 error Error: Command failed: yarn run publish:registry
+14 error warning package.json: No license field
+14 error warning package.json: No license field
+14 error warning package.json: No license field
+14 error error Couldn't publish package: "https://npm.pkg.github.com/@code-of-everand%2ftypes-misc: scope 'code-of-everand' in package name '@code-of-everand/types-misc' does not match repo owner 'haywoodsolutions' in repository element in package.json"
+14 error error Command failed with exit code 1.
+14 error yarn run v1.22.5
+14 error $ yarn publish
+14 error [1/4] Bumping version...
+14 error info Current version: 1.0.5
+14 error [2/4] Logging in...
+14 error [3/4] Publishing...
+14 error info Visit https://yarnpkg.com/en/docs/cli/publish for documentation about this command.
+14 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+14 error
+14 error     at C:\Users\tomha\Desktop\git\code-of-everand\node_modules\execa\index.js:236:11

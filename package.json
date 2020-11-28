@@ -1,20 +1,15 @@
 {
-  "name": "code-of-everand",
+  "name": "@code-of-everand/root",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "build": "lerna run build",
-    "publish-all": "lerna publish"
+    "publish:registry": "lerna run publish:registry",
+    "deploy": "lerna run deploy"
   },
   "devDependencies": {
     "lerna": "^2.11.0"
-  },
-  "nohoist": [
-     "**/firebase-admin",
-     "**/firebase-admin/**",
-     "**/firebase-functions",
-     "**/firebase-functions/**"
-  ]
+  }
 }

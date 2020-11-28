@@ -3,11 +3,13 @@
   "version": "1.0.5",
   "description": "@code-of-everand/types-battle",
   "scripts": {
-    "test": "tsc"
+    "compile": "tsc",
+    "compile:types": "tsc --declaration true",
+    "build": "yarn compile",
+    "publish:registry": "yarn publish"
   },
-  "files": [
-    "index.d.ts"
-  ],
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "repository": {
     "directory": "packages/types-battle",
     "type": "git",
@@ -23,6 +25,7 @@
     "@code-of-everand/types-misc": "^1.0.5"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   }
 }
